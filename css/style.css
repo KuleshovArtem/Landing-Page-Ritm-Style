@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 .main{
     margin: 0 auto;
@@ -45,15 +48,78 @@
     border: none;
     cursor:pointer;
 }
+.btn{
+    width: 150px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: #FFFFFF;
+    background: #018ABE;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+
 
 .first_screen {
     margin: 0 auto;
     margin-top: 70px;
     height: 600px;
-    /* width: 1296px; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 1296px;
     background: url('../img/bg/first_bg.jpg') center center / cover no-repeat;
-    
+    border-radius: 10px;
 }
+.section__heding{
+    margin-top: 136px;
+}
+.main-title{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+    color: #FFFFFF
+}
+.sessions_group{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.session {
+    display: flex;
+    align-items:flex-end;
+    margin-top: 24px;
+    margin-right: 24px;
+    width: 416px;
+    height: 258px;
+    background: url(/img/session_selection/unsplash_little_ligth.png);
+    border-radius: 10px;
+
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    vertical-align: bottom;
+}
+.session__active {
+    background-image: url(/img/session_selection/unsplash_big_ligth.png);
+    height: 540px;
+}
+
 
 .description {
     display: flex;
@@ -62,10 +128,13 @@
     width: 1076px;
     margin-top: 150px;
 }
-.description__heding{
+.section__heding {
     display: flex;
+    align-items:center;
+    justify-content: center;
 }
 .section-title {
+    margin-left: 45px;
     font-family: 'El Messiri';
     font-style: normal;
     font-weight: 700;
@@ -81,9 +150,17 @@
     border-radius: 0px 50px;
 }
 .section-rectangle_rigth{
-    background: url('../icons/Rectangle_rigth.png');
+    background: url('../icons/Rectangle_left.png');
     width: 28px;
     height: 14px;
+    margin-left: 45px;
     border-radius: 0px 50px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.section-title_mini{
+    font-size: 24px;
+}
 
+.rectangle_white{
+    background: #FFFFFF;
 }
